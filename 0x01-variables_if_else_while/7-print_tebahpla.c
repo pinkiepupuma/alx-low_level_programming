@@ -1,18 +1,18 @@
 #include<stdio.h>
 
 /**
- * main - print 0-9
+ * main - print the alphabet in reverse
  *
  * Return: 0
  */
 int main(void)
 {
-	int n = '0';
+	char z = 'z';
 
-	while (n <= '9')
+	while (z >= 'a')
 	{
-		putchar(n);
-		n++;
+		putchar(z);
+		z--;
 	}
 	putchar('\n');
 	return (0);
