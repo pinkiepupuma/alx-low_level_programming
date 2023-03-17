@@ -1,20 +1,17 @@
 #include "main.h"
 
 /**
- *malloc_checked - functions string
- *@b: number
- *Return: void
+ * malloc_checked - allocate memory
+ * @b: number of bytes
+ * Return: pointer string
  */
-
 void *malloc_checked(unsigned int b)
 {
-void *p;
+	void *str;
 
-p = malloc(b);
-if (p == NULL)
-{
-exit(98);
-}
+	str = malloc(b);
+	if (str == NULL)
+		exit(98);
 
-return (p);
+	return (str);
 }
